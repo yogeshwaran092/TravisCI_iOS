@@ -4,6 +4,5 @@ before_script: travis/before_script.sh
 script: travis/script.sh
 
 set -e
-brew update
-brew install xctool
-# xctool -workspace TravisCI -scheme TravisCITests
+
+xctool -workspace TravisCI -scheme TravisCITests

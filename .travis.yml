@@ -3,7 +3,7 @@ language: objective-c
 before_script: travis/before_script.sh
 script: travis/script.sh
 
-#!/bin/sh
-set -e
+ #!/bin/sh
+ set -e
 
-xctool -workspace TravisCI -scheme TravisCITests
+ xctool -workspace TravisCI -scheme TravisCITests

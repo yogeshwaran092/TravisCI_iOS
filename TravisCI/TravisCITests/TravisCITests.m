@@ -34,6 +34,12 @@
     XCTAssertTrue(true,@"Expression was not true");
 }
 
+-(void)testStringForNil
+{
+    NSString *someString;
+    XCTAssertNil(someString,@"somestring was not nil");
+}
+
 -(void)testFalse
 {
     int value1 = 1;

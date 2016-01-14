@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		679687954681B2EB7F6C74F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D2E7B01906697279A02AC9 /* libPods.a */; };
 		EC8A50131C47719200382BA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8A50121C47719200382BA6 /* main.m */; };
 		EC8A50161C47719200382BA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8A50151C47719200382BA6 /* AppDelegate.m */; };
 		EC8A50191C47719200382BA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8A50181C47719200382BA6 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A86F5FADEC79F581C700C3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A752C7F36FA72CD451958CFF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C5D2E7B01906697279A02AC9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8A500E1C47719100382BA6 /* TravisCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8A50121C47719200382BA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC8A50141C47719200382BA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679687954681B2EB7F6C74F3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E29DE0B047A9EB1D7206491 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A86F5FADEC79F581C700C3E /* Pods.debug.xcconfig */,
+				A752C7F36FA72CD451958CFF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6591951AC3F953948FA2BFDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5D2E7B01906697279A02AC9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC8A50051C47719100382BA6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				EC8A502A1C47719200382BA6 /* TravisCITests */,
 				EC8A50351C47719200382BA6 /* TravisCIUITests */,
 				EC8A500F1C47719100382BA6 /* Products */,
+				3E29DE0B047A9EB1D7206491 /* Pods */,
+				6591951AC3F953948FA2BFDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC8A503B1C47719200382BA6 /* Build configuration list for PBXNativeTarget "TravisCI" */;
 			buildPhases = (
+				AA75D9147570C99DADD0772D /* Check Pods Manifest.lock */,
 				EC8A500A1C47719100382BA6 /* Sources */,
 				EC8A500B1C47719100382BA6 /* Frameworks */,
 				EC8A500C1C47719100382BA6 /* Resources */,
+				2384658726FEA37FE3934A7A /* Embed Pods Frameworks */,
+				2B869F53C782154E30AAB94F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2384658726FEA37FE3934A7A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B869F53C782154E30AAB94F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA75D9147570C99DADD0772D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC8A500A1C47719100382BA6 /* Sources */ = {
@@ -409,6 +484,7 @@
 		};
 		EC8A503C1C47719200382BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A86F5FADEC79F581C700C3E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TravisCI/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		EC8A503D1C47719200382BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A752C7F36FA72CD451958CFF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TravisCI/Info.plist;
@@ -496,6 +573,7 @@
 				EC8A503D1C47719200382BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC8A503E1C47719200382BA6 /* Build configuration list for PBXNativeTarget "TravisCITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				EC8A50401C47719200382BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC8A50411C47719200382BA6 /* Build configuration list for PBXNativeTarget "TravisCIUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				EC8A50431C47719200382BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

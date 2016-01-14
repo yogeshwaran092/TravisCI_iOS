@@ -1,4 +1,3 @@
 language: objective-c
 
-# build via xcodetest
-script: ./build_and_run_unit_tests.sh TravisCI TravisCITests
+

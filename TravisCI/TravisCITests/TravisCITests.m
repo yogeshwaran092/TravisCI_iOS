@@ -44,7 +44,7 @@
 {
     int value1 = 1;
     int value2 = 2 ;
-    XCTAssertFalse(value1 != value2,@"%d == %d should evaluate to false",value1,value2);
+    XCTAssertFalse(value1 == value2,@"%d == %d should evaluate to false",value1,value2);
 }
 
 - (void)testPerformanceExample {

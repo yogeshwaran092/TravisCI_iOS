@@ -1,4 +1,2 @@
 language: objective-c
-script:
-  - xctool -workspace TravisCI.xcworkspace -scheme TravisCI -sdk iphonesimulator
-  - xctool test -workspace TravisCI.xcworkspace -scheme TravisCITests -sdk iphonesimulator
+

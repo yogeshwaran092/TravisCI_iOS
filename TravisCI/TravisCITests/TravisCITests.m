@@ -29,6 +29,18 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
+-(void)testTrue
+{
+    XCTAssertTrue(true,@"Expression was not true");
+}
+
+-(void)testFalse
+{
+    int value1 = 1;
+    int value2 = 2 ;
+    XCTAssertFalse(value1 == value2,@"%d == %d should evaluate to false",value1,value2);
+}
+
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{

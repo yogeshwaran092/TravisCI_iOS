@@ -1,7 +1,3 @@
 language: objective-c
-
-before_install:
-    - brew update
-    - brew install xctool
     
 script: xctool -workspace TravisCI -scheme TravisCITests

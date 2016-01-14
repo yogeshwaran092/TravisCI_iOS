@@ -16,6 +16,7 @@
 		EC8A50211C47719200382BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8A501F1C47719200382BA6 /* LaunchScreen.storyboard */; };
 		EC8A502C1C47719200382BA6 /* TravisCITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8A502B1C47719200382BA6 /* TravisCITests.m */; };
 		EC8A50371C47719200382BA6 /* TravisCIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8A50361C47719200382BA6 /* TravisCIUITests.m */; };
+		EC8A50451C47CC5500382BA6 /* TravisTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8A50441C47CC5500382BA6 /* TravisTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		EC8A50321C47719200382BA6 /* TravisCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8A50361C47719200382BA6 /* TravisCIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisCIUITests.m; sourceTree = "<group>"; };
 		EC8A50381C47719200382BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8A50441C47CC5500382BA6 /* TravisTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravisTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				EC8A502B1C47719200382BA6 /* TravisCITests.m */,
 				EC8A502D1C47719200382BA6 /* Info.plist */,
+				EC8A50441C47CC5500382BA6 /* TravisTest.m */,
 			);
 			path = TravisCITests;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8A50451C47CC5500382BA6 /* TravisTest.m in Sources */,
 				EC8A502C1C47719200382BA6 /* TravisCITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

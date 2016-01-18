@@ -1,3 +1,4 @@
  language: objective-c  #1
  xcode_workspace: TravisCI.xcworkspace #3
- xcode_scheme: TravisCITests #4
+ xcode_scheme: TravisCI #4
+ xcode_sdk: iphonesimulator9.2
